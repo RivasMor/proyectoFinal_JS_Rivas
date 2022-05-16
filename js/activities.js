@@ -18,7 +18,7 @@ function generarID(array) {
 function buscarCiudades() {
     let ciudadesDrop = document.getElementById('ciudadesDropdown');
     let ciudadesInnerHtml = `<option selected="true" disabled="disabled"></option>>`;
-    fetch('../json/ciudades.json')
+   fetch('https://628278e29fac04c65415c40e.mockapi.io/ciudades')
         .then((resp) => resp.json())
         .then((data) => {
             data.provincias.forEach(element => {
@@ -31,7 +31,7 @@ function buscarCiudades() {
 function buscarCiudadesConDefault(ciudad) {
     let ciudadesDrop = document.getElementById('ciudadesDropdown');
     let ciudadesInnerHtml = "";
-    fetch('../json/ciudades.json')
+    fetch('https://628278e29fac04c65415c40e.mockapi.io/ciudades')
         .then((resp) => resp.json())
         .then((data) => {
             data.provincias.forEach(element => {
@@ -143,13 +143,14 @@ function deletTable() {
     tableBody.innerHTML = "";
 }
 
-function showActivities() {
+
+function showActivities() {  
     let table = document.getElementById('tableActivities');
-    let headerTable = document.getElementById('headerTable');
-    let tableBody = document.getElementById('tableBody');
-    let arrayActivities = JSON.parse(localStorage.getItem('activities'));
-    deletTable();
-    if (arrayActivities !== []) {
+        let headerTable = document.getElementById('headerTable');
+        let tableBody = document.getElementById('tableBody');    
+        deletTable();  
+    let arrayActivities = JSON.parse(localStorage.getItem('activities'));    
+    if (arrayActivities && arrayActivities !== []) {        
         for (activity of arrayActivities) {
             let hilera = document.createElement("tr");
             let celda = document.createElement('td');
@@ -231,3 +232,4 @@ btnSaveActivity.onclick = () => {
     let id = document.getElementById('idEditActivity').value;
     activities(id);
 }
+
