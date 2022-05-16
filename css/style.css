@@ -1,0 +1,268 @@
+
+
+    .containerIndex{
+        background-image: url('../img/2255.jpg');
+        background-size: cover;
+       height:100vh; 
+    
+        }
+    
+    
+    #containerNewUser{
+        background-image: url('../img/2255.jpg');
+        background-size: cover;
+        
+        height: 100vh;
+        font-family: 'Numans', sans-serif;
+        }
+    
+        
+        .container{
+        height: 100%;
+        align-content: center;
+        }
+        
+        .card{
+        height: 370px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        }
+        
+        
+        .social_icon span{
+        font-size: 60px;
+        margin-left: 10px;
+        color: #FFC312;
+        }
+        
+        .social_icon span:hover{
+        color: white;
+        cursor: pointer;
+        }
+        
+        .card-header h3{
+        color: white;
+        text-align: center;
+        }
+        
+        .oculto{
+            color: white;
+            display: none;
+        }
+        #textNewUser{
+            display: none;
+        }
+        #textNewUserError{
+            display: none;
+        }
+        
+        .input-group-prepend span{
+        width: 50px;
+        background-color: #FFC312;
+        color: black;
+        border:0 !important;
+        }
+        
+        input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+        
+        }
+        
+        .remember{
+        color: white;
+        }
+        
+        .remember input
+        {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        }
+        
+        .login_btn{
+        color: black;
+        background-color: #FFC312;
+        width: 150px;
+        margin-top: 5vh;
+        
+        }
+        
+        .login_btn:hover{
+        color: black;
+        background-color: white;
+        }
+        
+        .links{
+        color: white;
+        }
+        .card-footer a:hover{
+            color: gray;
+        }
+        .vl {
+            border-left: 2px solid white;
+            height: 23px;
+            margin-left: 3%;
+            margin-right: 3%;
+          }
+        
+        .links a{
+        margin-left: 4px;
+        }
+        .card-footer a{
+            text-decoration-style: none;
+            color:white;
+        }
+        
+    /* new User*/
+    .labelNewUser{
+        color: white;
+    }
+    #cardNewUser{    
+        height: 650px;
+        margin-top: 4vh;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+    }
+    
+    #buttonNewUser{
+        color: black;
+        background-color: #FFC312;
+        width: 150px;
+        margin-top: 5vh;
+        
+        }
+        
+    #buttonNewUser:hover{
+        color: black;
+        background-color: white;
+        }
+    /*Activities*/
+    
+    .panel{
+        font-family: 'Raleway', sans-serif;
+        padding: 0;
+        border: none;
+        box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+    .panel .panel-heading{
+        margin-top: 15vh;
+        padding: 30px;
+        border-radius: 0;
+        
+    }
+    .panel .panel-heading .btn{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 7px 15px;
+        border: none;
+        border-radius: 0;
+        transition: all 0.3s ease 0s;
+        
+    }
+    .panel .panel-heading .btn:hover{ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .panel .panel-heading .form-horizontal .form-group{ margin: 0; }
+    .panel .panel-heading .form-horizontal label{
+        color: #fff;
+        margin-right: 10px;
+    }
+    .panel .panel-heading .form-horizontal .form-control{
+        display: inline-block;
+        width: 80px;
+        border: none;
+        border-radius: 0;
+    }
+    .panel .panel-heading .form-horizontal .form-control:focus{
+        box-shadow: none;
+        border: none;
+    }
+    .panel .panel-body{
+        padding: 0;
+        border-radius: 0;
+    }
+    .panel .panel-body .table thead tr th{
+        color: #fff;
+        
+        font-size: 17px;
+        font-weight: 700;
+        padding: 12px;
+        border-bottom: none;
+    }
+    .panel .panel-body .table thead tr th:nth-of-type(1){ width: 120px; }
+    .panel .panel-body .table thead tr th:nth-of-type(3){ width: 15%; }
+    .panel .panel-body .table tbody tr td{
+        color: #555;
+        background: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 13px;
+        vertical-align: middle;
+        border-color: #e7e7e7;
+    }
+    .panel .panel-body .table tbody tr:nth-child(odd) td{ background: #f5f5f5; }
+    .panel .panel-body .table tbody .action-list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .panel .panel-body .table tbody .action-list li{ display: inline-block; }
+    .panel .panel-body .table tbody .action-list li a{
+        color: #fff;
+        font-size: 13px;
+        line-height: 28px;
+        height: 28px;
+        width: 33px;
+        padding: 0;
+        border-radius: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .panel .panel-body .table tbody .action-list li a:hover{ box-shadow: 0 0 5px #ddd; }
+    .panel .panel-footer{
+        color: #fff;
+        background: #535353;
+        font-size: 16px;
+        line-height: 33px;
+        padding: 25px 15px;
+        border-radius: 0;
+    }
+    .pagination{ margin: 0; }
+    .pagination li a{
+        color: #fff;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0 2px;
+        border: none;
+        border-radius: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .pagination li a:hover,
+    .pagination li a:focus,
+    .pagination li.active a{
+        color: #fff;
+        background-color: #000;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    }
+    #cardNewActivity{
+        height: 60vh;
+        display: none;
+    }
+    #tableActivities{
+        margin-left: 2%;
+    }
+    
+    #btnShowModalAdd{
+        float: right;
+    }
+    #btnShowModalAdd:hover{
+        color: bisque;
+        
+    }
+    #modalText{
+        display: none;
+    }

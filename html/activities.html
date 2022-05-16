@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+<body onload="showActivities()">
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="panel" id="panelActivities">
+                <div class="panel-heading bg-info text-white">
+                    <div class="row">                        
+                        <div class="col-sm-12 col-xs-12">
+                            <p class="h3 mt-2" id="titleTableActivities">Proximas Actividades</p>          
+                            
+                            <input type="button" data-toggle="modal" id="btnShowModalAdd" data-target="#exampleModalCenter" class="btn btn-sm btn-primary bg-dark" value="Agregar Nueva">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body table-responsive bg-info text-white">
+                    <table class="table" id="tableActivities">
+                        <thead id="headerTable">
+                            <tr>                                
+                                <th>ID</th>
+                                <th>Actividad</th>
+                                <th>Dificultad</th>
+                                <th>Ciudad</th>
+                                <th>Cupo</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                           
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer bg-info text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Nueva Actividad</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">            
+            <form  autocomplete="off"> 
+                  
+                <input type="hidden" id="idEditActivity">                                         
+                <div class="form-group" id="formActivity">
+                    <label for="activity">Nombre Actividad</label>
+                    <input type="text" id="activity" class="form-control" placeholder="">
+                </div>                                           
+                <div class="form-group">
+                    <label  for="dificult">Nivel de Dificultad</label>
+                    <input type="text" id="dificult" class="form-control" placeholder="">
+                </div>                     
+                <div class="form-group">
+                    <label for="availableSeats">Cupos Disponibles</label>                            
+                    <input type="text" id="availableSeats" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="ciudadesDropdown">Ciudad</label>                
+                    <select id="ciudadesDropdown" class="form-control">
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancelActivity" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" id="btnSaveActivity"  class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</div>    
+    
+</body>
+<script type="text/javascript" src="../js/activities.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+
+</html>
